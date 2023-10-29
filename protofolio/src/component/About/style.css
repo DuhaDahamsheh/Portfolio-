@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+#about{
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+}
+
+.title{
+    text-shadow: 0 0 0.125em rgb(192 38 211 / 0.5), 0 0 0.45em currentColor;
+
+}
+

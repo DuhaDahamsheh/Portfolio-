@@ -1,0 +1,15 @@
+.navbar{
+    padding: 10px 0px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 9999;
+    transition: 0.32 ease-in-out;
+}
+
+.navbar.scrolled{
+padding: 0px 0;
+background-color: #121212 !important;
+
+}
+

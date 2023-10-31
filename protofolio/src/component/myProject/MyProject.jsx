@@ -11,7 +11,7 @@ const MyProject = () => {
             className="tracking-tight  title text-4xl font-black text-teal-400  dark:text-white"
             style={{ fontFamily: "Georgia, serif" }}
           >
-            My Project{" "}
+            My Project
           </h1>
 
           <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 lg:grid-cols-2">
@@ -24,9 +24,9 @@ const MyProject = () => {
                 width: "500px",
               }}
             >
-              <div className="w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-white/60 dark:bg-gray-800/60">
+              <div className=" w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-white/60 dark:bg-gray-800/60">
                 <h2 className="mt-4 text-xl font-semibold text-gray-800 capitalize dark:text-white">
-                  BRANDING STOR{" "}
+                  BRANDING STOR
                 </h2>
                 <p className="mt-2 text-lg tracking-wider text-blue-500 uppercase dark:text-blue-400 ">
                   <Project1 />

@@ -8,13 +8,13 @@ const Timline = () => {
 
       <section className=" dark:bg-gray-900">
     <div className="container px-6 py-10 mx-auto">
-    <h5
+    <h5 id="question"
         className="tracking-tight  title text-4xl font-black text-teal-400  dark:text-white"
         style={{ fontFamily: "Georgia, serif" ,gap:"2rem",  padding:"4rem"}}
       >
-        <p className="title">What did duha's passion for programming start?</p>
+        <p >What did duha's passion for programming start?</p>
       </h5>
-
+    
 
         <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 md:grid-cols-2 xl:grid-cols-3">
             <div className="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group"

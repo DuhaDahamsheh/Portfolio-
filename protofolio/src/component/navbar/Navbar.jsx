@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
 ("use client");
-import { Button, Navbar } from "flowbite-react";
+import { Button, Navbar, Timeline } from "flowbite-react";
 import "./style.css";
+import Home from "../home/Home";
+import About from "../About/About";
+import MyProject from "../myProject/MyProject";
 
 const Navbars = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -16,7 +19,7 @@ const Navbars = () => {
     };
     window.addEventListener("scroll", onScroll);
     return () => window.removeEventListener("scroll", onScroll);
-  }, []);
+}, []);
 
   const onUpdateActiveLinke = (value) => {
     setActiveLinke(value);
@@ -48,35 +51,35 @@ const Navbars = () => {
         </div>
         <Navbar.Collapse>
           <Navbar.Link
-            href="#"
+            
             style={{ fontSize: "20px" ,fontFamily:"fantasy"}}
             active
             className={
-              actineLinke === "home" ? "active navbar-link" : "navbar-link"
+              actineLinke === "home" ? <Home/> : ""
             }
             onClick={() => {
               onUpdateActiveLinke("home");
             }}
           >
-            Home
+            Home 
           </Navbar.Link>
           <Navbar.Link
-            href="#"
+           
             style={{ fontSize: "20px",fontFamily:"fantasy" }}
             className={
-              actineLinke === "About" ? "active navbar-link" : "navbar-link"
+              actineLinke === "About" ? <About/> : ""
             }
             onClick={() => {
               onUpdateActiveLinke("About");
             }}
           >
-            About
+            About 
           </Navbar.Link>
           <Navbar.Link
-            href="#"
+           
             style={{ fontSize: "20px",fontFamily:"fantasy" }}
             className={
-              actineLinke === "MyProject" ? "active navbar-link" : "navbar-link"
+              actineLinke === "MyProject" ? <MyProject/> : "navbar-link"
             }
             onClick={() => {
               onUpdateActiveLinke("MyProject");
@@ -85,10 +88,9 @@ const Navbars = () => {
             My Project
           </Navbar.Link>
           <Navbar.Link
-            href="#"
             style={{ fontSize: "20px",fontFamily:"fantasy" }}
             className={
-              actineLinke === "Passion" ? "active navbar-link" : "navbar-link"
+              actineLinke === "Passion" ? <Timeline/> : "navbar-link"
             }
             onClick={() => {
               onUpdateActiveLinke("Passion");
@@ -97,7 +99,7 @@ const Navbars = () => {
             Passion
           </Navbar.Link>
           <Navbar.Link
-            href="#"
+        
             style={{ fontSize: "20px",fontFamily:"fantasy" }}
             className={
               actineLinke === "Contact" ? "active navbar-link" : "navbar-link"

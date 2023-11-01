@@ -4,7 +4,7 @@ import Project1 from "../project1/project1";
 import Project2 from "../project2/Project2";
 const MyProject = () => {
   return (
-    <div>
+    <div >
       <section className="place-content-center place-items-center overflow-hidden bg-gradient-to-b from-slate-900 via-purple-900 to-black">
         <div className="container px-6 py-10 mx-auto">
           <h1

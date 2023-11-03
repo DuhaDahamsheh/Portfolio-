@@ -22,6 +22,7 @@ const MyProject = () => {
                 backgroundSize: "contain",
                 height: "400px",
                 width: "400px",
+                borderRadius:"2rem"
               }}
             >
               <div className=" w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-white/60 dark:bg-gray-800/60">
@@ -42,6 +43,7 @@ const MyProject = () => {
                 backgroundSize: "contain",
                 height: "400px",
                 width: "400px",
+                borderRadius:"2rem"
               }}
             >
               <div className="w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-white/60 dark:bg-gray-800/60">

@@ -62,7 +62,7 @@ const About = () => {
     <section className="grid min-h-screen place-content-center text-white place-items-center overflow-hidden bg-gradient-to-b from-slate-900 via-purple-800 to-black" id="about">
     <div   >
        <div className="md:grid md:grid-cols-2 gap-8 items-center   xl:gap-16 sm:py-16 xl:px-16">
-        <img src={`${image}`} width={500} height={500} />
+        <img src={`${image}`} width={500} height={500} style={{borderRadius:"2rem" }}/>
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p

@@ -1,57 +1,74 @@
 import React from "react";
 ("use client");
-import "./style.css";
-import { Card } from "flowbite-react";
+import "../About/style.css"
+import  { useTransition, useState } from "react";
+
+import TabButton from "../TabButton";
+
+const TAB_DATA = [
+  {
+    title: "Skills",
+    id: "skills",
+    content: (
+      <ul className="list-disc pl-2 text-lg">
+        Node.js<br/>
+        Express <br/>
+        PostgreSQL <br/>
+        Sequelize <br/>
+        JavaScript <br/>
+        React <br/>
+      </ul>
+    ),
+  },
+  {
+    title: "Education",
+    id: "education",
+    content: (
+      <ul className="list-disc pl-2 text-lg">
+       <li  className=" text-xl font-semibold text-white"> Meraki academy Jun 2023 - Nov 2023 :</li>
+        <hr/>
+      <p className=" font-thin text-xl text-white">22-week Immersive Full-Stack Web Development Bootcamp with over 700+ hours of coding, building projects, and solving problems.</p>
+        <br/>
+      <br></br>
+       <li  className=" text-xl font-semibold text-white"> Hashemite University 2018-2022 :</li>
+        <hr/>
+       <p className=" font-thin text-xl text-white"> Bachelor’s degree in medical laboratory science</p>
+      </ul>
+    ),
+  },
+  {
+    title: "Certifications",
+    id: "certifications",
+    content: (
+      <ul className="list-disc pl-2 text-lg gap-3 ">
+       <li>Full Stack Web Development From Meraki Academy</li>  <br/>
+      <li>Bachelor's Degree Medical Laboratory Since From Hashemiate University</li> 
+      
+      </ul>
+    ),
+  },
+];
 const About = () => {
+
+  const [tab, setTab] = useState("skills");
+  const [isPending, startTransition] = useTransition();
+
+  const handleTabChange = (id) => {
+    startTransition(() => {
+      setTab(id);
+    });
+  };
   return (
-    <div
-      id="about"
-      className="grid min-h-screen place-content-center place-items-center overflow-hidden bg-gradient-to-b from-slate-900 via-purple-800 to-black"
-    >
-      <img  className="animate-bounce" src="src\assets\Brazuca - Planning.png" />
-      <Card
-        style={{ padding: "1rem", margin: "2rem" }}
-        className="bg-transparent"
-      >
-        
-        <div class="patterns">
-          <svg width="100%" height="100%">
-            <defs>
-              <pattern
-                id="polka-dots"
-                x="0"
-                y="0"
-                width="100"
-                height="100"
-                patternUnits="userSpaceOnUse"
-              >
-               
-              </pattern>
-              <style>
-                @import url("https://fonts.googleapis.com/css?
-                family=Lora:400,400i,700,700i");
-              </style>
-            </defs>
-
-            <rect
-              x="0"
-              y="0"
-              width="100%"
-              height="100%"
-              fill="url(#polka-dots)"
-            >
-              {" "}
-            </rect>
-
-            <text x="50%" y="60%" text-anchor="middle">
-              About Me
-            </text>
-          </svg>
-        </div>
-        <p
-          className="text-xl text-black"
+    <section className="grid min-h-screen place-content-center text-white place-items-center overflow-hidden bg-gradient-to-b from-slate-900 via-purple-800 to-black" id="about">
+    <div   >
+       <div className="md:grid md:grid-cols-2 gap-8 items-center   xl:gap-16 sm:py-16 xl:px-16">
+        <img src="src\assets\about-image.png" width={500} height={500} />
+        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
+          <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
+          <p
+          className="text-xl text-white"
          
-          style={{ fontFamily: "cursive " ,fontSize:"24px",fontWeight:"400" }}
+          style={{ fontSize:"24px",fontWeight:"200" }}
         >
           <p >
             A full-stack developer with entry-level experience specializing in
@@ -61,8 +78,36 @@ const About = () => {
             willingness to take on added responsibilities to meet team goals.
           </p>
         </p>
-      </Card>
+          <div className="flex flex-row justify-start mt-8">
+            <TabButton
+              selectTab={() => handleTabChange("skills")}
+              active={tab === "skills"}
+            >
+              {" "}
+              Skills{" "}
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("education")}
+              active={tab === "education"}
+            >
+              {" "}
+              Education{" "}
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("certifications")}
+              active={tab === "certifications"}
+            >
+              {" "}
+              Certifications{" "}
+            </TabButton>
+          </div>
+          <div className="mt-8">
+            {TAB_DATA.find((t) => t.id === tab).content}
+          </div>
+        </div>
+      </div>
     </div>
+    </section>
   );
 };
 

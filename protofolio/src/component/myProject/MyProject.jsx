@@ -5,8 +5,8 @@ import Project2 from "../project2/Project2";
 const MyProject = () => {
   return (
     <div >
-      <section className="place-content-center place-items-center overflow-hidden bg-gradient-to-b from-slate-900 via-purple-900 to-black">
-        <div className="container px-6 py-10 mx-auto">
+      <section id="MyProject" className="place-content-center place-items-center overflow-hidden bg-gradient-to-b from-slate-900 via-purple-900 to-black">
+        <div className="container px-6 py-20 mx-auto">
           <h1
             className="tracking-tight  title text-4xl font-black text-teal-400  dark:text-white"
             style={{ fontFamily: "Georgia, serif" }}
@@ -14,14 +14,14 @@ const MyProject = () => {
             My Project
           </h1>
 
-          <div className="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 lg:grid-cols-2">
+          <div className="place-content-center place-items-center grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 lg:grid-cols-2">
             <div
               className="flex items-end overflow-hidden bg-cover rounded-lg h-96"
               style={{
                 backgroundImage: `url(${background1})`,
                 backgroundSize: "contain",
-                height: "500px",
-                width: "500px",
+                height: "400px",
+                width: "400px",
               }}
             >
               <div className=" w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-white/60 dark:bg-gray-800/60">
@@ -40,8 +40,8 @@ const MyProject = () => {
                 backgroundImage:
                   "url('https://res.cloudinary.com/drzcyo3sv/image/upload/v1697135018/Provider_2_iaqlbc.jpg')",
                 backgroundSize: "contain",
-                height: "500px",
-                width: "500px",
+                height: "400px",
+                width: "400px",
               }}
             >
               <div className="w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-white/60 dark:bg-gray-800/60">

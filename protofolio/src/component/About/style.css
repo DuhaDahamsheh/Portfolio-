@@ -2,11 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-
-#about{
-    display: grid;
-    grid-template-columns: 2fr 4fr;
+p {
+  display: inline;
+  background-repeat : no-repeat;
+  transition: all 500ms ease-in-out;
+  text-decoration-thickness: 5px;
+background-position :left ;
+background-size : 0% 100%;
+background-image :linear-gradient(rgb(68, 2, 54), rgb(68, 2, 54))
 }
+p :hover{
+
+  background-size: 100% 100%}
+
 
 .title{
     text-shadow: 0 0 0.125em rgb(192 38 211 / 0.5), 0 0 0.45em currentColor;
@@ -42,15 +50,4 @@ text {
     
   }
 
-  p{
-    margin-bottom : 4em;
- display :inline;
-      background-repeat : no-repeat ;
-      transition : all 500ms ease-in-out;
-    background-position: left;
-    background-size: 0% 100%;
-    background-image :linear-gradient(to right, rgb(21, 199, 155), rgb(21, 199, 155));
-  }
-p :hover{
-   
-    background-size :100% 100%}
+ 

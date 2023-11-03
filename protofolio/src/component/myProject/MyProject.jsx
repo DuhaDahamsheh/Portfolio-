@@ -1,6 +1,6 @@
 import React from "react";
 import background1 from "../../assets/pranding.png";
-import Project1 from "../project1/project1";
+import Project1 from "../project1/Project1";
 import Project2 from "../project2/Project2";
 const MyProject = () => {
   return (

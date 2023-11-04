@@ -1,5 +1,6 @@
 import "./App.css";
 import About from "./component/About/About";
+import ContactMe from "./component/contactMe/ContactMe";
 import Home from "./component/home/Home";
 import MyProject from "./component/myProject/MyProject";
 import Navbars from "./component/navbar/Navbar";
@@ -21,6 +22,7 @@ function App() {
       <About />
       <Timline />
       <MyProject  />
+      <ContactMe/>
     </>
   );
 }

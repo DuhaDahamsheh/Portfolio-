@@ -46,8 +46,7 @@
 }
 .discription-text{
   color: white !important;
-  font-family: 'Courier New', Courier, monospace !important;
-  line-height: 0% !important;
+ font-size: 14px !important;
 }
 .skill p {
     color: #B8B8B8;

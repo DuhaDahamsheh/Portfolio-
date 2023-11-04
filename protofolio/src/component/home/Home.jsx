@@ -3,6 +3,7 @@ import React from "react";
 import "./style.css";
 
 const Home = () => {
+
   return (
     <div className="homePage" id="home">
      
@@ -33,11 +34,10 @@ const Home = () => {
             Success is not the key to happiness. Happiness Is the key to success. If you love what you are doing, you will be successful.
             </p>
             <div className="flex justify-center">
-              <button className="inline-flex text-white bg-purple-500 py-2 px-4 focus:outline-none hover:bg-opacity-80 rounded text-sm">
-                Book a demo
-              </button>
+            <a href="#Contact" className="inline-flex text-white bg-purple-500 py-2 px-4 focus:outline-none hover:bg-opacity-80 rounded text-sm">Contact Me</a>
+        
               <button className="inline-flex text-white bg-purple-500 py-2 px-4 mx-2 focus:outline-none hover:bg-opacity-80 rounded text-sm">
-                Book a demo
+                My Resume
               </button>
             </div>
           </div>

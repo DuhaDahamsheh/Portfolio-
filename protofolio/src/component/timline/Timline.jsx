@@ -18,7 +18,7 @@ const Timline = () => {
       items: 2,
     },
     mobile: {
-      breakpoint: { max: 464, min: 0 },
+      breakpoint: { max: 300, min: 0 },
       items: 1,
     },
   };

@@ -15,14 +15,15 @@ const MyProject = () => {
           </h1>
 
           <div className="place-content-center place-items-center grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 lg:grid-cols-2">
-            <div
+            <div 
               className="flex items-end overflow-hidden bg-cover rounded-lg h-96"
               style={{
                 backgroundImage: `url(${background1})`,
                 backgroundSize: "contain",
                 height: "400px",
                 width: "400px",
-                borderRadius:"2rem"
+                borderRadius:"2rem",
+              
               }}
             >
               <div className=" w-full px-8 py-4 overflow-hidden rounded-b-lg backdrop-blur-sm bg-white/60 dark:bg-gray-800/60">

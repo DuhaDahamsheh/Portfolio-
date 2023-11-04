@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from "react";
 ("use client");
-import { Button, Navbar, Timeline } from "flowbite-react";
+import { Navbar, Timeline } from "flowbite-react";
 import "./style.css";
-import Home from "../home/Home";
+
+import { SocialIcon } from 'react-social-icons'
 import About from "../About/About";
 import MyProject from "../myProject/MyProject";
 
 const Navbars = () => {
   const [scrolled, setScrolled] = useState(false);
   const [actineLinke, setActiveLinke] = useState("home");
+  
   useEffect(() => {
     const onScroll = () => {
       if (window.scrollY > 50) {
@@ -36,17 +38,15 @@ const Navbars = () => {
           color: "white",
         }}
       >
-        {/* <div className="relative">
-          <img
-            className="object-cover w-16 h-16 rounded-full ring ring-gray-300 dark:ring-gray-600"
-            src="https://images.unsplash.com/photo-1570295999919-56ceb5ecca61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=4&w=880&h=880&q=100"
-            alt=""
-          />
-          <span class="absolute bottom-0 right-0 w-3 h-3 rounded-full bg-emerald-500 ring-1 ring-white"></span>
-        </div> */}
-
+      
+    
         <div className="flex md:order-2">
-          <Button>Get started</Button>
+         
+          <SocialIcon  network="github" url="https://github.com/DuhaDahamsheh" style={{marginRight:"0.5rem"}} />
+       
+          <SocialIcon network="linkedin" url="https://www.linkedin.com/in/duhadahamsheh/"  style={{marginRight:"0.5rem"}} />
+          <SocialIcon network="google" url="duhadahamsheh@gmail.com"  />
+
           <Navbar.Toggle />
         </div>
         <Navbar.Collapse>

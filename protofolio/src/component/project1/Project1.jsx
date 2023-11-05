@@ -56,7 +56,7 @@ const Project1 = () => {
                     <ReactPlayer
                       width="290px"
                       height="300px"
-                      url="https://www.youtube.com/watch?v=2a3Oxq4uooE&t=295s"
+                      url="https://youtu.be/9K9dj8ydYfI"
                     />
                   </Blockquote>
                   <div>

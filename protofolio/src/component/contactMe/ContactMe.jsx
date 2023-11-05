@@ -1,13 +1,24 @@
 import React,{ useRef, useState } from 'react'
 import emailjs from "@emailjs/browser";
 import { SocialIcon } from 'react-social-icons'
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import "./style.css"
 const ContactMe = () => {
     const form = useRef();
 const[messg ,setMessg]=useState('')
-const [name, setName] = useState("");
-  const [message, setMessage] = useState("");
-  const [email, setEmail] = useState("");
+
+const notify = () =>toast('🚀 Message Send Successfully', {
+    position: "top-right",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "light",
+    });
+
   const sendEmail = (e) => {
     e.preventDefault();
     emailjs
@@ -20,6 +31,7 @@ const [name, setName] = useState("");
       .then(
         (result) => {
           console.log("SUCCESS!", result, result.text);
+          
           setMessg("SUCCESS!");
         
         },
@@ -95,9 +107,7 @@ const [name, setName] = useState("");
                     <div className="-mx-2 md:items-center md:flex">
                         <div className="flex-1 px-2">
                             <label className="block mb-2 text-sm text-white dark:text-gray-200">First Name</label>
-                            <input type="text" placeholder="John " className="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" name='user_firstName' onChange={(e) => {
-            setName(e.target.value);
-          }}/>
+                            <input type="text" placeholder="John " className="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" name='user_firstName' />
                         </div>
                         <div class="flex-1 px-2 mt-4 md:mt-0">
                             <label class="block mb-2 text-sm text-white dark:text-gray-200">Last Name</label>
@@ -108,23 +118,21 @@ const [name, setName] = useState("");
 
                     <div className="mt-4">
                         <label className="block mb-2 text-sm text-white dark:text-gray-200">Email address</label>
-                        <input type="email" placeholder="johndoe@example.com" className="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" name='user_email'  onChange={(e) => {
-            setEmail(e.target.value);
-          }}/>
+                        <input type="email" placeholder="johndoe@example.com" className="block w-full px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" name='user_email' />
                     </div>
 
                     <div className="w-full mt-4">
                         <label className="block mb-2 text-sm text-white dark:text-gray-200">Message</label>
-                        <textarea className="block w-full h-32 px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg md:h-56 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="Message" name='message'onChange={(e) => {
-            setMessage(e.target.value);
-          }}></textarea>
+                        <textarea className="block w-full h-32 px-5 py-2.5 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-lg md:h-56 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="Message" name='message'></textarea>
                     </div>
 
-                    <button className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-purple-700 rounded-lg hover:bg-purple-400 focus:outline-none focus:ring focus:ring-purple-300 focus:ring-opacity-50" type='submit'>
+                    <button id='cursor' className="w-full px-6 py-3 mt-4 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-purple-700 rounded-lg hover:bg-purple-400 focus:outline-none focus:ring focus:ring-purple-300 focus:ring-opacity-50"  onClick={notify}>
                         Send message
                     </button>
+
                 </form>
             </div>
+            <ToastContainer />
         </div>
     </div>
 </section></div>

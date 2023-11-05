@@ -11,12 +11,14 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2 text-lg">
-        Node.js<br/>
-        Express <br/>
-        PostgreSQL <br/>
-        Sequelize <br/>
-        JavaScript <br/>
-        React <br/>
+       <li> Node.js</li>
+       <li> Express</li> 
+      <li>  PostgreSQL </li>
+       <li> HTML</li> 
+       <li> CSS </li>
+        <li>Redux </li>
+       <li> JavaScript </li>
+       <li> React</li> 
       </ul>
     ),
   },
@@ -78,22 +80,22 @@ const About = () => {
             willingness to take on added responsibilities to meet team goals.
           </p>
         </p>
-          <div className="flex flex-row justify-start mt-8">
-            <TabButton
+          <div   className="flex flex-row justify-start mt-8">
+            <TabButton 
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
             >
               {" "}
               Skills{" "}
             </TabButton>
-            <TabButton
+            <TabButton  
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
             >
               {" "}
               Education{" "}
             </TabButton>
-            <TabButton
+            <TabButton 
               selectTab={() => handleTabChange("certifications")}
               active={tab === "certifications"}
             >

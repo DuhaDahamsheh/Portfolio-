@@ -57,12 +57,12 @@ const notify = () =>toast('🚀 Message Send Successfully', {
             <div className="grid grid-cols-1 gap-12 md:grid-cols-2">
                 <div>
                     <span className="inline-block p-3 text-blue-500 ">
-                    <SocialIcon network="google" url="duhadahamsheh@gmail.com"  />
+                    <SocialIcon network="google"  href="mailto:duhadahamsheh@gmail.com"  />
                     </span>
 
                     <h2 className="mt-4 text-base font-medium text-gray-50 dark:text-white">Email</h2>
                    
-                    <p className="mt-2 text-sm hover:bg-purple-50 text-blue-500 dark:text-blue-400"><a href='duhadahamsheh@gmail.com' style={{fontStyle:"oblique" ,fontWeight:"700"}}>duhadahamsheh@gmail.com</a></p>
+                    <p className="mt-2 text-sm hover:bg-purple-50 text-blue-500 dark:text-blue-400"><a href="mailto:duhadahamsheh@gmail.com" style={{fontStyle:"oblique" ,fontWeight:"700"}}>duhadahamsheh@gmail.com</a></p>
                 </div>
 
                 <div>
@@ -92,6 +92,8 @@ const notify = () =>toast('🚀 Message Send Successfully', {
                     <span className="inline-block p-4 m-2 text-blue-500 rounded-full bg-white dark:bg-gray-700">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" className="w-5 h-5">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                        
+                        
                     </svg>
                 </span>
                   

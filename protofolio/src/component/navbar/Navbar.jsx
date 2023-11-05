@@ -45,7 +45,7 @@ const Navbars = () => {
           <SocialIcon  network="github" url="https://github.com/DuhaDahamsheh" style={{marginRight:"0.5rem"}} />
        
           <SocialIcon network="linkedin" url="https://www.linkedin.com/in/duhadahamsheh/"  style={{marginRight:"0.5rem"}} />
-          <SocialIcon network="google" url="duhadahamsheh@gmail.com"  />
+          <SocialIcon network="google" href="mailto:duhadahamsheh@gmail.com"  />
 
           <Navbar.Toggle />
         </div>

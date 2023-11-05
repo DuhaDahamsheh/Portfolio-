@@ -98,6 +98,18 @@ const Project1 = () => {
                     https://trello.com/b/KZAz1anh/e-commerce-website
                   </a>
                 </div>
+                <div>
+                  <h2 className=" text-2xl font-semibold text-white">
+                    WebSit Link :
+                  </h2>
+
+                  <a
+                    className=" text-lg "
+                    href="https://brandingstor.netlify.app/"
+                  >
+                   https://brandingstor.netlify.app/
+                  </a>
+                </div>
               </div>
             </Modal.Body>
             <Modal.Footer>

@@ -2,7 +2,7 @@ import React from "react";
 ("use client");
 import "../About/style.css"
 import  { useTransition, useState } from "react";
-import image from "../../assets/about-image.png"
+import image from "../../assets/IMG_4670.jpg"
 import TabButton from "../TabButton";
 
 const TAB_DATA = [
@@ -61,7 +61,9 @@ const About = () => {
     });
   };
   return (
-    <section className="grid min-h-screen place-content-center text-white place-items-center overflow-hidden bg-gradient-to-b from-slate-900 via-purple-800 to-black" id="about">
+    <section className="grid min-h-screen place-content-center text-white place-items-center overflow-hidden bg-black" id="about">
+      <div id="stars"></div>
+      
     <div   >
        <div className="md:grid md:grid-cols-2 gap-8 items-center   xl:gap-16 sm:py-16 xl:px-16">
         <img src={`${image}`} width={500} height={500} style={{borderRadius:"2rem" }}/>

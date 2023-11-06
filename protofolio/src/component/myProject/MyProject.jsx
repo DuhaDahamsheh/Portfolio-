@@ -5,7 +5,9 @@ import Project2 from "../project2/Project2";
 const MyProject = () => {
   return (
     <div >
-      <section id="MyProject" className="place-content-center place-items-center overflow-hidden bg-gradient-to-b from-slate-900 via-purple-900 to-black">
+      <section id="MyProject" className="place-content-center place-items-center overflow-hidden bg-black">
+      <div id="stars"></div>
+       
         <div className="container px-6 py-20 mx-auto">
           <h1
             className="tracking-tight  title text-4xl font-black text-teal-400  dark:text-white"

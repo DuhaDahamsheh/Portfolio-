@@ -1,5 +1,6 @@
 import "./App.css";
 import About from "./component/About/About";
+
 import ContactMe from "./component/contactMe/ContactMe";
 import Home from "./component/home/Home";
 import MyProject from "./component/myProject/MyProject";
@@ -14,15 +15,17 @@ function App() {
         <div id="stars"></div>
         <div id="stars2"></div>
         <div id="stars3"></div>
-       
+        
       </section>
 
       <Navbars />
       <Home />
       <About />
+      
       <Timline />
       <MyProject  />
       <ContactMe/>
+  
     </>
   );
 }

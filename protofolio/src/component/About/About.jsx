@@ -2,7 +2,7 @@ import React from "react";
 ("use client");
 import "../About/style.css"
 import  { useTransition, useState } from "react";
-import image from "../../assets/IMG_4670.jpg"
+import image from "../../assets/IMG_1955.jpg"
 import TabButton from "../TabButton";
 
 const TAB_DATA = [
@@ -11,14 +11,16 @@ const TAB_DATA = [
     id: "skills",
     content: (
       <ul className="list-disc pl-2 text-lg">
+        <li> JavaScript </li>
+       <li> React</li> 
+        <li>Redux </li>
        <li> Node.js</li>
        <li> Express</li> 
       <li>  PostgreSQL </li>
        <li> HTML</li> 
        <li> CSS </li>
-        <li>Redux </li>
-       <li> JavaScript </li>
-       <li> React</li> 
+       
+       
       </ul>
     ),
   },

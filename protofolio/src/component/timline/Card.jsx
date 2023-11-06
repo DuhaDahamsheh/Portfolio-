@@ -3,9 +3,12 @@ import "./style.css"
 const Card = () => {
   return (
     <div className='card-items ' >
+      <div id="question" className='text-purple-200 text-2xl gap-0'>
+        <h3 style={{fontFamily:"serif" ,marginBottom:"1rem"}}>how did duha's passion for programming start ?</h3>
+       </div>
         <div className="place-content-center place-items-center grid grid-cols-1 gap-6 mt-8 xl:mt-0 mb-0 xl:gap-8 lg:grid-cols-3">
           
-  <div className="w-80  rounded-lg py-2 shadow-lg hover:shadow-2xl transition duration-500 transform hover:scale-105 cursor-pointer">
+  <div className=" rounded-lg py-2 shadow-lg hover:shadow-2xl transition duration-500 transform hover:scale-105 cursor-pointer">
    <div className='row'>
     <div className='column'>
       <div
@@ -16,8 +19,8 @@ const Card = () => {
               }}
             >
               <div className="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100">
-                <h2 className=" tracking-tight  title text-sm font-black text-white capitalize">
-                  <p className="discription-text">
+                <h2 className="mt-4 tracking-tight title text-md  text-white capitalize">
+                  <p className="discription-text ">
                     My career started when I finished my bachelor's degree in
                     laboratory medical sciences and after a few time I had the
                     opportunity to work in a hospital.
@@ -30,8 +33,8 @@ const Card = () => {
   </div>
 </div>
       
-<div className="min-h-screen  flex items-center justify-center">
-  <div className="w-80  rounded-lg py-2 shadow-lg hover:shadow-2xl transition duration-500 transform hover:scale-105 cursor-pointer">
+<div >
+  <div className="rounded-lg py-2 shadow-lg hover:shadow-2xl transition duration-500 transform hover:scale-105 cursor-pointer">
   <div className='column'>
   <div
                   className="overflow-hidden bg-cover rounded-lg cursor-pointer h-96 group"
@@ -41,7 +44,7 @@ const Card = () => {
                   }}
                 >
                   <div className="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100">
-                    <h2 className="mt-4 tracking-tight  title text-xl font-black text-white capitalize">
+                    <h2 className="mt-4 tracking-tight  title text-md text-white capitalize">
                       <p className="discription-text">
                         After some time in this work, I found that it is not my
                         passion and I did not find a soul in it, and because I
@@ -54,8 +57,8 @@ const Card = () => {
             </div></div>
   </div>
 </div>
-<div className="min-h-screen flex items-center justify-center">
-  <div className="w-80  rounded-lg py-2 shadow-lg hover:shadow-2xl transition duration-500 transform hover:scale-105 cursor-pointer">
+<div >
+  <div className="rounded-lg py-2 shadow-lg hover:shadow-2xl transition duration-500 transform hover:scale-105 cursor-pointer">
   <div className='column'>
   <div
   
@@ -66,7 +69,7 @@ const Card = () => {
     }}
   >
     <div className="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100">
-      <h2 className="mt-4 tracking-tight  title text-xl font-black text-white capitalize">
+      <h2 className="mt-4 tracking-tight  title text-md text-white capitalize">
         <p className="discription-text">
           At that time, I thought a lot to find something that
           suits my passion and because I like to keep up with

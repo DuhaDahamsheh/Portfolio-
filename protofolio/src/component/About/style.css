@@ -16,7 +16,7 @@ p {
   text-decoration-thickness: 5px;
 background-position :left ;
 background-size : 0% 100%;
-background-image :linear-gradient(rgb(76 29 149), rgb(153, 103, 228))
+background-image :linear-gradient(rgb(149, 29, 109), rgba(149, 29, 109, 0.541))
 }
 p :hover{
 

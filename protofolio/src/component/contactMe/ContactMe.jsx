@@ -246,7 +246,7 @@ const ContactMe = () => {
        
           <SocialIcon network="linkedin" url="https://www.linkedin.com/in/duhadahamsheh/"  style={{marginRight:"0.5rem"}} />
           <SocialIcon network="google" href="mailto:duhadahamsheh@gmail.com"   style={{marginRight:"0.5rem"}}/>
-          <SocialIcon network="whatsapp"  href="tel:962791026868" />
+          <SocialIcon network="whatsapp"  href="tel:962791026868" style={{marginRight:"0.5rem"}}/>
             </div>
           </div>
 

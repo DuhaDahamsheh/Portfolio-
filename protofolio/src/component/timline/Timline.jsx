@@ -9,11 +9,13 @@ const Timline = () => {
       id="Passion"
       className="flex min-h-screen place-content-center place-items-center overflow-hidden bg-black"
     >
+      
       <div id="stars"></div>
-       
+      
       <div className="container px-6 py-20 mx-auto bg-black">
         <Card/>
        </div>
+    
     </div>
   );
 };

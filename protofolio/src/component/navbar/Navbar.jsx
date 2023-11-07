@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 ("use client");
 import { Navbar, Timeline } from "flowbite-react";
 import "./style.css";
-
 import { SocialIcon } from 'react-social-icons'
 import About from "../About/About";
 import MyProject from "../myProject/MyProject";
@@ -51,9 +50,10 @@ const Navbars = () => {
           <Navbar.Toggle />
         </div>
         <Navbar.Collapse>
-          <Navbar.Link
+          <Navbar.Link  id="a-link"
+        
             href="#home"
-            style={{ fontSize: "20px", fontFamily: "fantasy" }}
+            style={{ fontSize: "20px" }}
             active
             className={actineLinke === "home" ? " <Home/>" : ""}
             onClick={() => {
@@ -62,9 +62,9 @@ const Navbars = () => {
           >
             Home
           </Navbar.Link>
-          <Navbar.Link
+          <Navbar.Link   id="a-link"
             href="#about"
-            style={{ fontSize: "20px", fontFamily: "fantasy" }}
+            style={{ fontSize: "20px" }}
             className={actineLinke === "about" ? <About /> : ""}
             onClick={() => {
               onUpdateActiveLinke("about");
@@ -73,9 +73,9 @@ const Navbars = () => {
             About
           </Navbar.Link>
 
-          <Navbar.Link
+          <Navbar.Link  id="a-link"
             href="#Passion"
-            style={{ fontSize: "20px", fontFamily: "fantasy" }}
+            style={{ fontSize: "20px" }}
             className={actineLinke === "Passion" ? <Timeline /> : "navbar-link"}
             onClick={() => {
               onUpdateActiveLinke("Passion");
@@ -83,9 +83,9 @@ const Navbars = () => {
           >
             Passion
           </Navbar.Link>
-          <Navbar.Link
+          <Navbar.Link  id="a-link"
             href="#MyProject"
-            style={{ fontSize: "20px", fontFamily: "fantasy" }}
+            style={{ fontSize: "20px" }}
             className={
               actineLinke === "MyProject" ? <MyProject /> : "navbar-link"
             }
@@ -95,9 +95,9 @@ const Navbars = () => {
           >
             My Project
           </Navbar.Link>
-          <Navbar.Link
+          <Navbar.Link  id="a-link"
             href="#Contact"
-            style={{ fontSize: "20px", fontFamily: "fantasy" }}
+            style={{ fontSize: "20px" }}
             className={
               actineLinke === "Contact" ? "active navbar-link" : "navbar-link"
             }

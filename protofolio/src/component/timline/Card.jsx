@@ -3,7 +3,7 @@ import "./style.css"
 const Card = () => {
   return (
     <div className='card-items ' >
-      <div id="question" className='text-purple-200 text-2xl gap-0'>
+      <div id="question" className='tracking-tight font-black text-purple-400 text-2xl gap-0'>
         <h3 style={{fontFamily:"serif" ,marginBottom:"1rem"}}>how did duha's passion for programming start ?</h3>
        </div>
         <div className="place-content-center place-items-center grid grid-cols-1 gap-6 mt-8 xl:mt-0 mb-0 xl:gap-8 lg:grid-cols-3">

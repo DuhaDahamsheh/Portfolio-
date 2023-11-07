@@ -8,9 +8,9 @@ const MyProject = () => {
       <section id="MyProject" className="place-content-center place-items-center overflow-hidden bg-black">
       <div id="stars"></div>
        
-        <div className="container px-6 py-20 mx-auto">
-          <h1
-            className="tracking-tight  title text-4xl font-black text-teal-400  dark:text-white"
+        <div className="container px-6 py-20 mx-auto" >
+          <h1 id="question"
+            className="tracking-tight  title text-3xl font-black text-purple-400  dark:text-white"
             style={{ fontFamily: "Georgia, serif" }}
           >
             My Project

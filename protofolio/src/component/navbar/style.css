@@ -13,3 +13,12 @@ background-color: #121212 !important;
 
 }
 
+#a-link{
+    color:rgb(185, 39, 230); 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 700;
+}
+
+#a-link:hover{
+    color: #9b27b085;
+}

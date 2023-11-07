@@ -76,7 +76,7 @@ const ContactMe = () => {
                 </h2>
 
                 <p className="mt-2 text-sm hover:bg-purple-50 text-blue-500 dark:text-blue-400">
-                  <a
+                  <a className="mt-2 text-sm text-purple-500 dark:text-purple-400"
                     href="mailto:duhadahamsheh@gmail.com"
                     style={{ fontStyle: "oblique", fontWeight: "700" }}
                   >
@@ -98,7 +98,7 @@ const ContactMe = () => {
                 </h2>
 
                 <p className="mt-2 text-sm hover:bg-purple-50  text-blue-500 dark:text-blue-400">
-                  <a
+                  <a className="mt-2 text-sm text-purple-500 dark:text-purple-400"
                     href="https://github.com/DuhaDahamsheh"
                     style={{ fontStyle: "oblique", fontWeight: "700" }}
                   >
@@ -119,7 +119,7 @@ const ContactMe = () => {
                   LinkedIn
                 </h2>
                 <p className="mt-2 text-sm  hover:bg-purple-50  text-blue-500 dark:text-blue-400">
-                  <a
+                  <a className="mt-2 text-sm text-purple-500 dark:text-purple-400"
                     href="https://www.linkedin.com/in/duhadahamsheh/"
                     style={{ fontStyle: "oblique", fontWeight: "700" }}
                   >
@@ -150,10 +150,10 @@ const ContactMe = () => {
                   Phone
                 </h2>
 
-                <p className="mt-2 text-sm hover:bg-purple-50 text-blue-500 dark:text-blue-400">
-                  <a
+                <p className="mt-2 text-sm hover:bg-purple-100 text-purple-500 dark:text-purple-400">
+                  <a  className="mt-2 text-sm text-purple-500 dark:text-purple-400"
                     href="tel:962791026868"
-                    style={{ fontStyle: "oblique", fontWeight: "700" }}
+                    style={{ fontStyle: "oblique", fontWeight: "700"}}
                   >
                     +962791026868
                   </a>

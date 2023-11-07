@@ -11,7 +11,7 @@ const Project2 = () => {
 
   return (
     <>
-      <Button onClick={() => props.setOpenModal("placement")}>
+      <Button className="inline-flex text-white bg-purple-500 focus:outline-none hover:bg-purple-200 rounded text-sm" onClick={() => props.setOpenModal("placement")}>
         SHOW DETAILS
       </Button>
       <div>
@@ -22,7 +22,7 @@ const Project2 = () => {
         >
           <div className=" bg-gradient-to-b from-slate-900 via-purple-900 to-black">
             <Modal.Header>
-              <h1 className="tracking-tight  title text-2xl font-black text-teal-500  dark:text-white">
+              <h1 className="tracking-tight  title text-2xl font-black text-purple-500  dark:text-white">
                 {" "}
                 CURE APP (MEDICAL APP)
               </h1>

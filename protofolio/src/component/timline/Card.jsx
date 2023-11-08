@@ -19,7 +19,7 @@ const Card = () => {
               }}
             >
               <div className="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100">
-                <h2 className="mt-4 tracking-tight title text-md  text-white capitalize">
+                <h2 className="mt-4 tracking-tight title text-md  text-white ">
                   <p className="discription-text ">
                     My career started when I finished my bachelor's degree in
                     laboratory medical sciences and after a few time I had the
@@ -44,13 +44,9 @@ const Card = () => {
                   }}
                 >
                   <div className="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100">
-                    <h2 className="mt-4 tracking-tight  title text-md text-white capitalize">
+                    <h2 className="mt-4 tracking-tight  title text-md text-white">
                       <p className="discription-text">
-                        After some time in this work, I found that it is not my
-                        passion and I did not find a soul in it, and because I
-                        am a person who loves learning and I love development, I
-                        decided to change, but at that time I was not doing what
-                        is my passion or how I will reach it.
+                      After Some Time In This Work, I Found That It was not My Passion And I Did Not Find A Soul In It, Because I Am A Person Who Loves Learning And I Love Development, I Decided To Change, But At That Time I Was Not Doing What Is My Passion Or How I Will Reach It.
                       </p>
                     </h2>
               </div>
@@ -69,7 +65,7 @@ const Card = () => {
     }}
   >
     <div className="flex flex-col justify-center w-full h-full px-8 py-4 transition-opacity duration-700 opacity-0 backdrop-blur-sm bg-gray-800/60 group-hover:opacity-100">
-      <h2 className="mt-4 tracking-tight  title text-md text-white capitalize">
+      <h2 className="mt-4 tracking-tight  title text-md text-white ">
         <p className="discription-text">
           At that time, I thought a lot to find something that
           suits my passion and because I like to keep up with

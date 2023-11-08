@@ -25,7 +25,7 @@ const Home = () => {
  <div className="hello">
                 <ul className="flip3 text-4xl ">
                 
-                  <li id="text-li">SoftWear Engineering</li>
+                  <li id="text-li">SoftWare Engineering</li>
                   <li id="text-li">Full Stack Developer</li>
                   <li id="text-li">Duha Dahamsheh </li>
                 </ul>

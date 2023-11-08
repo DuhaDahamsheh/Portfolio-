@@ -79,11 +79,14 @@ const Project1 = () => {
                     GitHub Link :
                   </h2>
 
-                  <a
+                  <a style={{
+                    fontStyle:"revert-layer" ,color:"#d8b4fe" ,opacity:0.9
+                  }}
                     className=" text-lg  "
                     href="https://github.com/C8-DuhaDahamsheh/MERAKI_Academy_Project_4"
                   >
-                    https://github.com/C8-DuhaDahamsheh/MERAKI_Academy_Project_4{" "}
+                    Branding-Store
+                   
                   </a>
                 </div>
                 <div>
@@ -91,11 +94,13 @@ const Project1 = () => {
                     Trello Link :
                   </h2>
 
-                  <a
+                  <a style={{
+                    fontStyle:"revert-layer" ,color:"#d8b4fe" ,opacity:0.9
+                  }}
                     className=" text-lg "
                     href="https://trello.com/b/KZAz1anh/e-commerce-website"
                   >
-                    https://trello.com/b/KZAz1anh/e-commerce-website
+                    Branding-Store
                   </a>
                 </div>
                 <div>
@@ -103,11 +108,13 @@ const Project1 = () => {
                     WebSit Link :
                   </h2>
 
-                  <a
+                  <a style={{ 
+                    fontStyle:"revert-layer" ,color:"#d8b4fe" ,opacity:0.9
+                  }}
                     className=" text-lg "
                     href="https://brandingstor.netlify.app/"
                   >
-                   https://brandingstor.netlify.app/
+                  Branding-Store
                   </a>
                 </div>
               </div>

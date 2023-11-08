@@ -70,11 +70,13 @@ const Project2 = () => {
                     GitHub Link :
                   </h2>
 
-                  <a
+                  <a style={{
+                    fontStyle:"revert-layer" ,color:"#d8b4fe" ,opacity:0.9
+                  }}
                     className=" text-lg  "
                     href="https://github.com/Girl-Power2/MERAKI_Academy_Project_5"
                   >
-                    https://github.com/Girl-Power2/MERAKI_Academy_Project_5{" "}
+                    Girl-Power2/Cure-App
                   </a>
                 </div>
                 <div>
@@ -82,11 +84,27 @@ const Project2 = () => {
                     Trello Link :
                   </h2>
 
-                  <a
+                  <a style={{
+                    fontStyle:"revert-layer" ,color:"#d8b4fe" ,opacity:0.9
+                  }}
                     className=" text-lg "
                     href='https://trello.com/b/LEUHLtAA/cure-app'
                   >
-                    https://trello.com/b/LEUHLtAA/cure-app
+                   CURE-APP
+                  </a>
+                </div>
+                <div>
+                  <h2 className=" text-2xl font-semibold text-white">
+                    App Link :
+                  </h2>
+
+                  <a style={{
+                    fontStyle:"revert-layer" ,color:"#d8b4fe" ,opacity:0.9
+                  }}
+                    className=" text-lg "
+                    href='https://cure-web-app.netlify.app/'
+                  >
+                   CURE-APP
                   </a>
                 </div>
               </div>

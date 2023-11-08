@@ -37,7 +37,7 @@ const Home = () => {
             <a href="#Contact" className="inline-flex text-white bg-purple-500 py-2 px-4 focus:outline-none hover:bg-opacity-80 rounded text-sm">Contact Me</a>
         
               
-              <a href="https://drive.google.com/file/d/1mRED7g2fJb-eQESir4_AoBnmh0V-GxF2/view?usp=sharing" className="inline-flex text-white bg-purple-500 py-2 px-4 mx-2 focus:outline-none hover:bg-opacity-40 rounded text-sm" download >Download Resume</a>
+              <a href="https://res.cloudinary.com/dgdapuuob/image/upload/f_auto,q_auto/txitzopz0lt5gvaz9skr" className="inline-flex text-white bg-purple-500 py-2 px-4 mx-2 focus:outline-none hover:bg-opacity-40 rounded text-sm" download >Download Resume</a>
              
             </div>
           </div>
